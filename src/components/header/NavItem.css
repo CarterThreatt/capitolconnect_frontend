@@ -16,7 +16,7 @@
     color: var(--gold-accent);
 }
 
-.nav-link-active {
+.nav-link.active {
     border-bottom: 2px solid var(--gold-accent);
     padding-bottom: 2px;
 }

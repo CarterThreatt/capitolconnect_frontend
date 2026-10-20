@@ -1,11 +1,13 @@
 import "./NavItem.css";
+import { NavLink } from "react-router-dom";
 
-const NavItem = ({ title, href, active }) => {
+// NavLink adds the class "active" by itself to the link of the page you are on
+const NavItem = ({ title, to }) => {
     return (
         <li className="nav-item">
-            <a href={href} className={active ? "nav-link nav-link-active" : "nav-link"}>
+            <NavLink to={to} end className="nav-link">
                 {title}
-            </a>
+            </NavLink>
         </li>
     );
 };

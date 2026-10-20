@@ -1,14 +1,14 @@
 import "./Nav.css";
 import NavItem from "./NavItem";
 
-// The links will point to real pages once the rest of the site is built
+// Each link points to a route set up in index.js
 const links = [
-    { title: "Home", href: "#home", active: true },
-    { title: "Monuments & Memorials", href: "#monuments" },
-    { title: "Capitol Tours", href: "#capitol-tours" },
-    { title: "White House Tours", href: "#white-house-tours" },
-    { title: "Smithsonian", href: "#smithsonian" },
-    { title: "Contact", href: "#contact" }
+    { title: "Home", to: "/" },
+    { title: "Monuments & Memorials", to: "/monuments-and-memorials" },
+    { title: "Capitol Tours", to: "/capitol-tours" },
+    { title: "White House Tours", to: "/white-house-tours" },
+    { title: "Smithsonian", to: "/smithsonian" },
+    { title: "Contact", to: "/contact" }
 ];
 
 const Nav = () => {
@@ -19,8 +19,7 @@ const Nav = () => {
                     <NavItem
                         key={link.title}
                         title={link.title}
-                        href={link.href}
-                        active={link.active}
+                        to={link.to}
                     />
                 ))}
             </ul>
