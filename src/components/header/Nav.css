@@ -1,0 +1,14 @@
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+@media (min-width: 1000px) {
+
+    .nav-list {
+        display: flex;
+        gap: 18px;
+        padding: 0;
+    }
+}

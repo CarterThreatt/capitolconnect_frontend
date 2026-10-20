@@ -1,0 +1,16 @@
+.logo {
+    align-items: center;
+    gap: 12px;
+    color: var(--off-white);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    font-family: var(--font-serif);
+    font-size: 1.3em;
+    letter-spacing: 0.02em;
+}

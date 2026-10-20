@@ -1,0 +1,14 @@
+.header {
+    background-color: var(--navy);
+    border-top: 5px solid var(--maroon);
+    padding: 14px 20px;
+}
+
+@media (min-width: 1000px) {
+
+    .header {
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 40px;
+    }
+}
