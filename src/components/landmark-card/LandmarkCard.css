@@ -1,0 +1,41 @@
+.landmark-card {
+    margin-bottom: 24px;
+    background-color: #ffffff;
+}
+
+.landmark-card img {
+    display: block;
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.landmark-card-body {
+    padding: 14px;
+}
+
+.landmark-card-category {
+    margin: 0 0 6px;
+    color: var(--gold-accent);
+    font-size: 0.85em;
+    letter-spacing: 0.03em;
+}
+
+.landmark-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.15em;
+}
+
+.landmark-card-description {
+    margin: 0 0 14px;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.landmark-card-meta {
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid #eeeeee;
+    color: #919191;
+    font-size: 0.85em;
+}

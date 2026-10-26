@@ -1,0 +1,15 @@
+.contact-info {
+    padding: 20px;
+    border-left: 4px solid var(--gold-accent);
+    background-color: var(--cream);
+}
+
+.contact-info p {
+    margin: 0 0 14px;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}

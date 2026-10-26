@@ -1,0 +1,33 @@
+.form-field {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--navy);
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.form-field input,
+.form-field textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px 14px;
+    border: 1.5px solid #d5d7dd;
+    background-color: var(--off-white);
+    color: var(--body-text);
+    font-family: var(--font-sans);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.form-field textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--navy);
+    outline: 2px solid var(--gold-accent);
+}

@@ -1,0 +1,45 @@
+.compare-row {
+    padding: 16px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.compare-row:last-child {
+    border-bottom: 0;
+}
+
+.compare-row > div {
+    margin-bottom: 10px;
+}
+
+.compare-row > div:last-child {
+    margin-bottom: 0;
+}
+
+.compare-label {
+    margin-bottom: 6px;
+    color: var(--navy);
+    font-family: var(--font-serif);
+    font-weight: 700;
+}
+
+.compare-header {
+    background-color: var(--navy);
+    color: #ffffff;
+}
+
+.compare-header .compare-label {
+    color: #ffffff;
+}
+
+@media (min-width: 1000px) {
+
+    .compare-row {
+        display: flex;
+        gap: 24px;
+    }
+
+    .compare-row > div {
+        flex: 1;
+        margin-bottom: 0;
+    }
+}

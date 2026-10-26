@@ -1,0 +1,12 @@
+#timeline {
+    background-color: var(--navy);
+    color: var(--off-white);
+}
+
+#timeline .section-heading {
+    margin-bottom: 34px;
+}
+
+#timeline .section-heading h2 {
+    color: #ffffff;
+}

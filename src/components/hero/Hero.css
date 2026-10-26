@@ -1,0 +1,113 @@
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    background-color: var(--navy);
+}
+
+.hero-text {
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    color: var(--off-white);
+    background-color: rgba(1, 1, 1, 0.30);
+}
+
+.hero-eyebrow {
+    margin: 0 0 14px;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.hero-eyebrow:empty {
+    display: none;
+}
+
+.hero-title {
+    margin: 0 0 16px;
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    margin: 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+
+/* Tall hero on the home page */
+.hero-large img {
+    height: 460px;
+}
+
+/* Shorter hero on every other page */
+.hero-small {
+    display: flex;
+    align-items: center;
+    min-height: 220px;
+    overflow: hidden;
+}
+
+.hero-small img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+}
+
+.hero-small .hero-text {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    background: none;
+}
+
+.hero-small .hero-title {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+.hero-small .hero-subtitle {
+    font-size: 0.95em;
+}
+
+@media (min-width: 1000px) {
+
+    .hero-large img {
+        height: auto;
+    }
+
+    .hero-large .hero-title {
+        max-width: 900px;
+        font-size: 3.2em;
+    }
+
+    .hero-large .hero-subtitle {
+        max-width: 700px;
+        font-size: 1.2em;
+    }
+
+    .hero-small {
+        min-height: 320px;
+    }
+
+    .hero-small .hero-title {
+        max-width: 900px;
+        font-size: 2.6em;
+    }
+
+    .hero-small .hero-subtitle {
+        max-width: 700px;
+        font-size: 1.05em;
+    }
+}

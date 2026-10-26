@@ -1,0 +1,40 @@
+.section-heading {
+    margin-bottom: 26px;
+}
+
+.section-heading h2 {
+    color: var(--navy);
+    font-size: 1.5em;
+}
+
+.section-note {
+    margin: 10px 0 0;
+    color: var(--navy);
+}
+
+.section-note:empty {
+    display: none;
+}
+
+.section-intro {
+    margin: 12px 0 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+
+.section-intro:empty {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+
+    .section-heading-row {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .section-note {
+        margin-top: 0;
+    }
+}

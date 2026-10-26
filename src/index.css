@@ -1,10 +1,14 @@
-/* Generic styles only. Each component has its own css file next to it. */
+/* Generic styles only. Each page and component has its own css file next to it. */
 
 :root {
     --navy: #10213b;
+    --navy-deep: #091628;
     --maroon: #7a2436;
     --gold-accent: #b08d54;
+    --cream: #ece7de;
     --off-white: #fbfaf7;
+    --footer-muted: #9fb0c9;
+    --body-text: #14151a;
 
     --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
     --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -13,6 +17,24 @@
 body {
     margin: 0;
     font-family: var(--font-sans);
+    color: var(--body-text);
+    background-color: #ffffff;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    margin: 0;
 }
 
 a {
@@ -21,6 +43,16 @@ a {
 
 img {
     max-width: 100%;
+}
+
+/* Padding shared by every band of content on every page */
+.content-section {
+    box-sizing: border-box;
+    padding: 40px 20px 50px;
+}
+
+.content-section-alt {
+    background-color: var(--cream);
 }
 
 /* columns for all devices */
@@ -35,5 +67,23 @@ img {
 
     .columns {
         display: flex;
+        gap: 24px;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .content-section {
+        padding-left: max(60px, calc((100% - 1180px) / 2));
+        padding-right: max(60px, calc((100% - 1180px) / 2));
     }
 }

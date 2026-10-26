@@ -1,7 +1,9 @@
+import "./Footer.css";
+
 const Footer = () => {
     return (
-        <footer id="footer">
-            <h2>Footer</h2>
+        <footer className="footer">
+            <p className="footer-copy">© 2026 Capitol Connect. All Rights Reserved</p>
         </footer>
     );
 };

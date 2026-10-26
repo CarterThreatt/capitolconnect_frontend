@@ -1,0 +1,8 @@
+.callout {
+    margin-top: 20px;
+    padding: 16px 20px;
+    border-left: 4px solid var(--gold-accent);
+    background-color: var(--cream);
+    font-size: 0.95em;
+    line-height: 1.5;
+}

@@ -1,0 +1,25 @@
+.security-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
+
+.security-box h4 {
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: var(--navy);
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+}
+
+.security-box ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.security-box li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}

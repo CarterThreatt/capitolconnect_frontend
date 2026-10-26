@@ -1,0 +1,10 @@
+#on-the-day .button-row {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1000px) {
+
+    #on-the-day .button-row {
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,45 @@
+.cross-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background-color: var(--navy);
+    color: #ffffff;
+}
+
+.cross-cta h2 {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.cross-cta p {
+    margin: 0;
+    max-width: 700px;
+    color: var(--footer-muted);
+    font-size: 0.95em;
+}
+
+.cross-cta-button {
+    padding: 12px 22px;
+    background-color: var(--gold-accent);
+    color: var(--navy-deep);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.cross-cta-button:hover {
+    background-color: var(--maroon);
+    color: #ffffff;
+}
+
+@media (min-width: 1000px) {
+
+    .cross-cta {
+        padding-left: max(60px, calc((100% - 1180px) / 2));
+        padding-right: max(60px, calc((100% - 1180px) / 2));
+    }
+}

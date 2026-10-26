@@ -1,0 +1,11 @@
+.footer {
+    background-color: var(--navy-deep);
+    border-bottom: 5px solid var(--maroon);
+}
+
+.footer-copy {
+    margin: 0;
+    padding: 20px;
+    font-size: 0.9em;
+    color: var(--footer-muted);
+}

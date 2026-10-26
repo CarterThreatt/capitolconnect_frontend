@@ -1,0 +1,36 @@
+.destination-card {
+    margin-bottom: 24px;
+    background-color: #ffffff;
+}
+
+.destination-card > a {
+    display: block;
+}
+
+.destination-card img {
+    display: block;
+    width: 100%;
+}
+
+.destination-card h3 {
+    padding: 14px 14px 8px;
+    font-size: 1.15em;
+}
+
+.destination-card h3 a {
+    color: var(--navy);
+}
+
+.destination-card p {
+    margin: 0;
+    padding: 0 14px 18px;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+@media (min-width: 1000px) {
+
+    .destination-card {
+        margin-bottom: 0;
+    }
+}

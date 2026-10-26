@@ -1,0 +1,16 @@
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--cream);
+}
+
+@media (min-width: 1000px) {
+
+    .filter-bar {
+        padding-left: max(60px, calc((100% - 1180px) / 2));
+        padding-right: max(60px, calc((100% - 1180px) / 2));
+    }
+}

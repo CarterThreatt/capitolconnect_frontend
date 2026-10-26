@@ -1,0 +1,18 @@
+.contact-form {
+    padding: 24px;
+    border: 1px solid #e3e3e3;
+    border-top: 3px solid var(--gold-accent);
+    background-color: #ffffff;
+}
+
+.contact-form .contact-form-submit {
+    padding: 12px 28px;
+    font-size: 1em;
+}
+
+@media (min-width: 1000px) {
+
+    .contact-form {
+        padding: 32px;
+    }
+}

@@ -3,7 +3,6 @@ import NavItem from "./NavItem";
 
 // Each link points to a route set up in index.js
 const links = [
-    { title: "Home", to: "/" },
     { title: "Monuments & Memorials", to: "/monuments-and-memorials" },
     { title: "Capitol Tours", to: "/capitol-tours" },
     { title: "White House Tours", to: "/white-house-tours" },

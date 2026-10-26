@@ -1,0 +1,12 @@
+@media (min-width: 1000px) {
+
+    /* three cards in a row, the last row can be shorter */
+    .district-list {
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+    .district-list .landmark-card {
+        flex: 0 0 calc((100% - 48px) / 3);
+    }
+}
