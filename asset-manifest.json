@@ -1,14 +1,43 @@
 {
   "files": {
-    "main.css": "/capitolconnect_frontend/static/css/main.49b400e8.css",
-    "main.js": "/capitolconnect_frontend/static/js/main.d5497322.js",
+    "main.css": "/capitolconnect_frontend/static/css/main.d34d293e.css",
+    "main.js": "/capitolconnect_frontend/static/js/main.4d3f6a7f.js",
+    "static/media/walking-map.png": "/capitolconnect_frontend/static/media/walking-map.62990b38ceb2fec9196e.png",
+    "static/media/hero.jpg": "/capitolconnect_frontend/static/media/hero.f8bf5082678cb20295ba.jpg",
+    "static/media/smithsonian-castle.jpg": "/capitolconnect_frontend/static/media/smithsonian-castle.e2ab392b0b52f8ef2bb4.jpg",
+    "static/media/fdr-memorial.jpg": "/capitolconnect_frontend/static/media/fdr-memorial.afda535f25a396f22fe2.jpg",
+    "static/media/monuments.jpg": "/capitolconnect_frontend/static/media/monuments.f481b9b0a1ac0d549e98.jpg",
+    "static/media/white-house-tours.jpg": "/capitolconnect_frontend/static/media/white-house-tours.9b146cd0c909ae1d0e59.jpg",
+    "static/media/smithsonian.jpg": "/capitolconnect_frontend/static/media/smithsonian.4a42fb7aaa5feb30f549.jpg",
+    "static/media/korean-war-memorial.jpg": "/capitolconnect_frontend/static/media/korean-war-memorial.4dc1255a5023adea3ccc.jpg",
+    "static/media/blue-room.jpg": "/capitolconnect_frontend/static/media/blue-room.f9513a8ec407bb904604.jpg",
+    "static/media/einstein-memorial.jpg": "/capitolconnect_frontend/static/media/einstein-memorial.c9ff9492702bddee307c.jpg",
+    "static/media/capitol-tours.jpg": "/capitolconnect_frontend/static/media/capitol-tours.de173b9a585c61c26c05.jpg",
+    "static/media/east-room.jpg": "/capitolconnect_frontend/static/media/east-room.ee7c53fbeb25ab6669cc.jpg",
+    "static/media/dc-war-memorial.jpg": "/capitolconnect_frontend/static/media/dc-war-memorial.b024a4199115b664121b.jpg",
+    "static/media/marine-corps-war-memorial.jpg": "/capitolconnect_frontend/static/media/marine-corps-war-memorial.9c1f59f634f0824d8387.jpg",
+    "static/media/grant-memorial.jpg": "/capitolconnect_frontend/static/media/grant-memorial.924a72d378e875672dd5.jpg",
+    "static/media/state-dining-room.jpg": "/capitolconnect_frontend/static/media/state-dining-room.76359921190cae4946e4.jpg",
+    "static/media/mlk-memorial.jpg": "/capitolconnect_frontend/static/media/mlk-memorial.10c0df50680673663cd3.jpg",
+    "static/media/page-hero.jpg": "/capitolconnect_frontend/static/media/page-hero.c24c7f6765ac154d5f54.jpg",
+    "static/media/the-crypt.jpg": "/capitolconnect_frontend/static/media/the-crypt.d5c0cfcbba830f431a90.jpg",
+    "static/media/jefferson-memorial.jpg": "/capitolconnect_frontend/static/media/jefferson-memorial.f4fb6272eb481dd5f727.jpg",
+    "static/media/wwii-memorial.jpg": "/capitolconnect_frontend/static/media/wwii-memorial.f501643888b2a5028d78.jpg",
+    "static/media/visitor-center.jpg": "/capitolconnect_frontend/static/media/visitor-center.057808c085f7f19f05b2.jpg",
+    "static/media/lincoln-memorial.jpg": "/capitolconnect_frontend/static/media/lincoln-memorial.b500e89d1708f5ca5257.jpg",
+    "static/media/rotunda.jpg": "/capitolconnect_frontend/static/media/rotunda.82f17bb638509ded817d.jpg",
+    "static/media/washington-monument.jpg": "/capitolconnect_frontend/static/media/washington-monument.3aee99782c893ca43e63.jpg",
+    "static/media/statuary-hall.jpg": "/capitolconnect_frontend/static/media/statuary-hall.52a0b627aa8af9eea1cf.jpg",
+    "static/media/decatur-house.jpg": "/capitolconnect_frontend/static/media/decatur-house.87694095245a4fa641ee.jpg",
+    "static/media/vietnam-veterans-memorial.jpg": "/capitolconnect_frontend/static/media/vietnam-veterans-memorial.f74ac7e472da40acd263.jpg",
+    "static/media/peoples-house.jpg": "/capitolconnect_frontend/static/media/peoples-house.3df1826f8c39cb8154df.jpg",
     "static/media/capitol_icon.png": "/capitolconnect_frontend/static/media/capitol_icon.9f39eda513670381be05.png",
     "index.html": "/capitolconnect_frontend/index.html",
-    "main.49b400e8.css.map": "/capitolconnect_frontend/static/css/main.49b400e8.css.map",
-    "main.d5497322.js.map": "/capitolconnect_frontend/static/js/main.d5497322.js.map"
+    "main.d34d293e.css.map": "/capitolconnect_frontend/static/css/main.d34d293e.css.map",
+    "main.4d3f6a7f.js.map": "/capitolconnect_frontend/static/js/main.4d3f6a7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.49b400e8.css",
-    "static/js/main.d5497322.js"
+    "static/css/main.d34d293e.css",
+    "static/js/main.4d3f6a7f.js"
   ]
 }
