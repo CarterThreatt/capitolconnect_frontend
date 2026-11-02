@@ -1,4 +1,5 @@
 import "./LoopCta.css";
+import ZoomImage from "../zoom-image/ZoomImage";
 
 const LoopCta = (props) => {
     return (
@@ -10,7 +11,7 @@ const LoopCta = (props) => {
                     <p className="loop-cta-text">{props.text}</p>
                 </div>
                 <div className="one">
-                    <img src={props.src} alt={props.alt} />
+                    <ZoomImage src={props.src} alt={props.alt} />
                 </div>
             </div>
         </section>

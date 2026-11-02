@@ -5,9 +5,21 @@
     background-color: #ffffff;
 }
 
+.contact-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
 .contact-form .contact-form-submit {
     padding: 12px 28px;
     font-size: 1em;
+}
+
+.contact-form .contact-form-submit:disabled {
+    opacity: 0.6;
+    cursor: default;
 }
 
 @media (min-width: 1000px) {

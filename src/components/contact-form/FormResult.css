@@ -1,0 +1,31 @@
+.form-result {
+    flex: 1;
+    min-width: 200px;
+    margin: 0;
+    padding: 10px 14px;
+    border-left: 4px solid var(--gold-accent);
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.form-result:empty {
+    display: none;
+}
+
+.form-result.pending {
+    background-color: var(--cream);
+    border-color: var(--gold-accent);
+    color: var(--navy);
+}
+
+.form-result.success {
+    background-color: #e8f3ec;
+    border-color: #2e7d4f;
+    color: #1d5a38;
+}
+
+.form-result.error {
+    background-color: #fbeaec;
+    border-color: var(--maroon);
+    color: var(--maroon);
+}

@@ -1,9 +1,10 @@
 import "./LandmarkCard.css";
+import ZoomImage from "../zoom-image/ZoomImage";
 
 const LandmarkCard = (props) => {
     return (
         <section className="one landmark-card">
-            <img src={props.src} alt={props.alt} />
+            <ZoomImage src={props.src} alt={props.alt} />
             <div className="landmark-card-body">
                 <p className="landmark-card-category">{props.category}</p>
                 <h3>{props.title}</h3>

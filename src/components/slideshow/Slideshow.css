@@ -1,0 +1,11 @@
+.slideshow-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.slideshow-dots {
+    display: flex;
+    gap: 8px;
+}

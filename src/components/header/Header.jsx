@@ -4,7 +4,7 @@ import Nav from "./Nav";
 
 const Header = () => {
     return (
-        <header className="header columns">
+        <header className="header columns-mobile">
             <Logo />
             <Nav />
         </header>

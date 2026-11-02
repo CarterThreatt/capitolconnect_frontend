@@ -1,4 +1,5 @@
 import "./FeatureCard.css";
+import ZoomImage from "../zoom-image/ZoomImage";
 import Badge from "./Badge";
 import FeatureDetail from "./FeatureDetail";
 import Callout from "../callout/Callout";
@@ -7,7 +8,7 @@ import Button from "../button/Button";
 const FeatureCard = (props) => {
     return (
         <section className="feature-card">
-            <img src={props.src} alt={props.alt} />
+            <ZoomImage src={props.src} alt={props.alt} />
             <div className="feature-card-body">
                 <div className="feature-card-badges">
                     {props.badges.map((badge) => (
