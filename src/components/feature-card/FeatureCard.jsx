@@ -26,7 +26,10 @@ const FeatureCard = (props) => {
                 {props.callouts.map((callout) => (
                     <Callout key={callout} text={callout} />
                 ))}
-                <p className="feature-card-link">{props.linkText && <Button text={props.linkText} href={props.linkUrl} />}</p>
+                <div className="feature-card-actions">
+                    {props.linkText && <Button text={props.linkText} href={props.linkUrl} />}
+                    <button type="button" className="feature-card-details-button" onClick={props.onOpen}>View Details</button>
+                </div>
             </div>
         </section>
     );

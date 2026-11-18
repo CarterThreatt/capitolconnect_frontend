@@ -1,0 +1,34 @@
+/* fields that sit side by side on a wide screen and stack on a phone */
+.add-monument-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-monument-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.add-monument-form .add-monument-submit {
+    padding: 12px 28px;
+    font-size: 1em;
+}
+
+.add-monument-form .add-monument-submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+@media (min-width: 1000px) {
+
+    .add-monument-row {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .add-monument-row .form-field {
+        flex: 1;
+    }
+}

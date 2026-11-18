@@ -39,3 +39,19 @@
     color: #919191;
     font-size: 0.85em;
 }
+
+.landmark-card-details-button {
+    margin-top: 14px;
+    padding: 8px 16px;
+    border: 1.5px solid var(--navy);
+    background-color: transparent;
+    color: var(--navy);
+    font-family: var(--font-sans);
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+.landmark-card-details-button:hover {
+    background-color: var(--navy);
+    color: #ffffff;
+}

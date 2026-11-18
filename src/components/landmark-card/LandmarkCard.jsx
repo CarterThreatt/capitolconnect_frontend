@@ -10,6 +10,7 @@ const LandmarkCard = (props) => {
                 <h3>{props.title}</h3>
                 <p className="landmark-card-description">{props.description}</p>
                 <p className="landmark-card-meta">{props.hours} - {props.tickets} - {props.time}</p>
+                <button type="button" className="landmark-card-details-button" onClick={props.onOpen}>View Details</button>
             </div>
         </section>
     );

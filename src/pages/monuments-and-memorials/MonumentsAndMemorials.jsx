@@ -5,6 +5,8 @@ import Hero from "../../components/hero/Hero";
 import FilterBar from "../../components/filter-bar/FilterBar";
 import SectionHeading from "../../components/section-heading/SectionHeading";
 import StatusMessage from "../../components/status-message/StatusMessage";
+import AddMonumentDialog from "../../components/add-monument/AddMonumentDialog";
+import MonumentDialog from "../../components/monument-dialog/MonumentDialog";
 import Slideshow from "../../components/slideshow/Slideshow";
 import FeatureCard from "../../components/feature-card/FeatureCard";
 import LandmarkCard from "../../components/landmark-card/LandmarkCard";
@@ -12,15 +14,18 @@ import MapFrame from "../../components/map-frame/MapFrame";
 import LoopCta from "../../components/loop-cta/LoopCta";
 import heroPic from "../../components/hero/images/page-hero.jpg";
 import walkingMap from "./images/walking-map.png";
+import { API_URL } from "../../config"; // Gets the current server URL from the config file,
+//                                         which can be changed for local development or production deployment
 
-// the server on Render, it sends the list of monuments and their pictures
-const API_URL = "https://capitol-compass-server.onrender.com";
 
 const MonumentsAndMemorials = () => {
     const [monuments, setMonuments] = useState([]);
     const [loading, setLoading] = useState(true);
     const [failed, setFailed] = useState(false);
     const [filter, setFilter] = useState("all");
+    const [showDialog, setShowDialog] = useState(false);
+    // the stop whose details dialog is open, null when none is open
+    const [selected, setSelected] = useState(null);
 
     // ask the server for the list one time, when the page first shows
     useEffect(() => {
@@ -39,10 +44,15 @@ const MonumentsAndMemorials = () => {
 
     const loaded = !loading && !failed;
 
+    // the form calls this when the server added a stop, putting it in the list shows it right away
+    const addMonument = (newMonument) => {
+        setMonuments((monuments) => [...monuments, newMonument]);
+    };
+
     // the monuments that match the button that is picked in the filter bar
-    const shown = monuments.filter((monument) => filter == "all" || monument.filters.includes(filter));
+    const shown = monuments.filter((monument) => filter == "all" || (monument.filters || []).includes(filter));
     const startHere = shown.filter((monument) => monument.section == "start-here");
-    const district = shown.filter((monument) => monument.section == "district");
+    const district = shown.filter((monument) => monument.section != "start-here");
 
     return (
         <main id="monuments" className="page">
@@ -96,7 +106,8 @@ const MonumentsAndMemorials = () => {
                                     ]}
                                     callouts={monument.callouts || []}
                                     linkText={monument.link && monument.link.text}
-                                    linkUrl={monument.link && monument.link.url} />
+                                    linkUrl={monument.link && monument.link.url}
+                                    onOpen={() => setSelected(monument)} />
                             ))}
                         </Slideshow>
                     )}
@@ -120,14 +131,29 @@ const MonumentsAndMemorials = () => {
                                     description={monument.description}
                                     hours={monument.hours}
                                     tickets={monument.tickets}
-                                    time={monument.time_needed} />
+                                    time={monument.time_needed}
+                                    onOpen={() => setSelected(monument)} />
                             ))}
                         </div>
                     )}
                 </section>
             )}
 
-            <section id="map-section" className="content-section">
+            {loaded && (
+                <section id="add-monument" className="content-section">
+                    <SectionHeading title="Know a stop we missed?" />
+                    <div className="add-monument-callout">
+                        <p>Tell us about it. Fill in the hours, the tickets and a short description, add a photo, and the new stop shows up in The Rest of The District right away.</p>
+                        <button type="button" className="button add-monument-open" onClick={() => setShowDialog(true)}>Add a Stop</button>
+                    </div>
+                </section>
+            )}
+
+            {showDialog && <AddMonumentDialog closeDialog={() => setShowDialog(false)} onAdded={addMonument} />}
+
+            {selected && <MonumentDialog monument={selected} closeDialog={() => setSelected(null)} />}
+
+            <section id="map-section" className="content-section content-section-alt">
                 <SectionHeading title="Find every stop on the map" />
                 <div className="columns">
                     <div className="two">

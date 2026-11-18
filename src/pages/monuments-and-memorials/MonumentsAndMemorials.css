@@ -21,6 +21,21 @@
     color: #444444;
 }
 
+.add-monument-callout {
+    max-width: 640px;
+}
+
+.add-monument-callout p {
+    margin: 0 0 20px;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+
+.add-monument-callout .add-monument-open {
+    padding: 12px 28px;
+    font-size: 1em;
+}
+
 @media (min-width: 1000px) {
 
     /* three cards in a row, the last row can be shorter */

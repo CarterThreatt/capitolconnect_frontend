@@ -59,12 +59,27 @@
     font-size: 0.8em;
 }
 
-.feature-card-link {
-    margin: 20px 0 0;
+.feature-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
 }
 
-.feature-card-link:empty {
-    display: none;
+.feature-card-details-button {
+    padding: 9px 18px;
+    border: 1.5px solid var(--navy);
+    background-color: transparent;
+    color: var(--navy);
+    font-family: var(--font-sans);
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.feature-card-details-button:hover {
+    background-color: var(--navy);
+    color: #ffffff;
 }
 
 @media (min-width: 1000px) {

@@ -1,0 +1,72 @@
+.image-picker {
+    margin-bottom: 20px;
+}
+
+.image-picker-label {
+    display: block;
+    color: var(--navy);
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.image-picker input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: 1.5px dashed #b9bcc6;
+    background-color: var(--off-white);
+    color: var(--body-text);
+    font-family: var(--font-sans);
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.image-picker input::file-selector-button {
+    margin-right: 12px;
+    padding: 8px 14px;
+    border: 0;
+    background-color: var(--navy);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+.image-picker input::file-selector-button:hover {
+    background-color: var(--maroon);
+}
+
+.image-picker.invalid input {
+    border-color: var(--maroon);
+}
+
+.image-picker-hint {
+    display: block;
+    margin-top: 6px;
+    color: #666666;
+    font-size: 0.8em;
+}
+
+.image-picker-error {
+    display: block;
+    margin-top: 6px;
+    color: var(--maroon);
+    font-size: 0.85em;
+}
+
+.image-picker-error:empty {
+    display: none;
+}
+
+/* the preview stays small so a big photo never takes over the form... this was a learn by making mistakes moment*/
+.image-picker .image-picker-preview {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    margin-top: 12px;
+    object-fit: cover;
+    border: 1px solid #ddd6c9;
+}
