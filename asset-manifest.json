@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/capitolconnect_frontend/static/css/main.b62a4036.css",
-    "main.js": "/capitolconnect_frontend/static/js/main.d0adfe45.js",
+    "main.css": "/capitolconnect_frontend/static/css/main.8877f920.css",
+    "main.js": "/capitolconnect_frontend/static/js/main.75b3f858.js",
     "static/media/walking-map.png": "/capitolconnect_frontend/static/media/walking-map.62990b38ceb2fec9196e.png",
     "static/media/hero.jpg": "/capitolconnect_frontend/static/media/hero.f8bf5082678cb20295ba.jpg",
     "static/media/smithsonian-castle.jpg": "/capitolconnect_frontend/static/media/smithsonian-castle.e2ab392b0b52f8ef2bb4.jpg",
@@ -21,11 +21,11 @@
     "static/media/peoples-house.jpg": "/capitolconnect_frontend/static/media/peoples-house.3df1826f8c39cb8154df.jpg",
     "static/media/capitol_icon.png": "/capitolconnect_frontend/static/media/capitol_icon.9f39eda513670381be05.png",
     "index.html": "/capitolconnect_frontend/index.html",
-    "main.b62a4036.css.map": "/capitolconnect_frontend/static/css/main.b62a4036.css.map",
-    "main.d0adfe45.js.map": "/capitolconnect_frontend/static/js/main.d0adfe45.js.map"
+    "main.8877f920.css.map": "/capitolconnect_frontend/static/css/main.8877f920.css.map",
+    "main.75b3f858.js.map": "/capitolconnect_frontend/static/js/main.75b3f858.js.map"
   },
   "entrypoints": [
-    "static/css/main.b62a4036.css",
-    "static/js/main.d0adfe45.js"
+    "static/css/main.8877f920.css",
+    "static/js/main.75b3f858.js"
   ]
 }
